@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let product = {
+        //     company: 'Apple',
+        //     price: 800000,
+        //     item_name: '16 pro max',
+        // };
+
+        // console.log(product);
+        // console.log(product.item_name);
+        // product.price = 500000;
+        // console.log(product);
+        // console.log(product['item_name']);
+
+        // let productName = 'item_name';
+        // console.log(product[productName]);
+
+        // delete product.price;
+        // console.log(product);
+
+        // NESTED OBJECTS
+
+        // let product = {
+        //     company: 'Apple',
+        //     price: 800000,
+        //     item_name: '16 pro max',
+        //     displayPrice: function() {
+        //         console.log(`Price of the product is Rs:${this.price}`)
+        //     }
+        // };
+        // product.displayPrice();
+
+        // console.log('This phone costs 50000 pkr'.toUpperCase());
+        // console.log('This phone costs 50000 pkr'.replace('pkr', 'Pakistani Rupees'));
+        
+
+        // let a = 5;
+        // let b = a;
+        // console.log(`${a}, ${b}`);
+        // a = 9;
+        // console.log(`${a}, ${b}`);
+
+        // let x = {num: 5};
+        // let y = x;
+        // console.log(`${x.num}, ${y.num}`);
+        // x.num = 8;
+        // console.log(`${x.num}, ${y.num}`);
+
+
+        // DESTRUCTURING
+       let product = {
+            company: 'Apple',
+            price: 800000,
+            item_name: '16 pro max',
+        };
+
+        let {item_name} = product;
+        console.log(item_name)
+    </script>
+</body>
+</html>
