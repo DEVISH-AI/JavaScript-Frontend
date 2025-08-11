@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance function</title>
+</head>
+<body>
+    <button id="my-btn">Click me</button>
+    <script>
+        // EVENTLISTNER
+
+        // let button = document.querySelector('#my-btn');
+        // let activity = event => console.log('hello world!')
+        // button.addEventListener('click', activity);
+
+        // let printDate = event => console.log(new Date());
+        // button.addEventListener('click', printDate);
+        // button.removeEventListener('click', activity);
+
+        // ANONYMOUS FUNCTION
+    // let sum = function(num1, num2){
+    //         return num1 + num2;
+    //     }
+    //     let newSum = sum;
+    //     console.log(sum(4, 9));
+    //     console.log(newSum(4, 9));
+
+    //     let sumThreeNumbers = function(num1, num2, num3, sumTwoNumbers) {
+    //         let sum1 = sumTwoNumbers(num1, num2);
+    //         return sumTwoNumbers(sum1, num3);
+    //     }
+
+    //     console.log(sumThreeNumbers(7,8,9, sum));
+
+    //     console.log(sumThreeNumbers);
+    //     console.log(typeof sumThreeNumbers);
+
+        // ARROW FUNCTION
+        // let sum = (num1, num2) => {
+        //     return num1+num2;
+        // }
+        // console.log(sum(7, 8));
+
+        // let square = num => num * num;
+        // console.log(square(7));
+
+        // SET TIMEOUT AND TIME INTERVAL
+        // let alarm = () => console.log('Wakey Wakey~');
+        // let timerId = setTimeout(alarm, 3000);
+        // console.log(`Alarm set with timerId: ${timerId}`);
+        // clearTimeout(timerId);
+        // let intervalId = setInterval(alarm, 1000);
+        // setTimeout(() => clearInterval(intervalId), 5000);
+
+
+        // FOR EACH LOOP
+        // return statement in this loop acts like a continue statement in this so it is recommended not to use it.
+        // let arr = [1,,2,3,4,5,6,7,8,9];
+        // arr.forEach(num => {
+        //     if(num === 5) {
+        //         return;
+        //     }
+        //     console.log(`visited: ${num}`);
+        // });
+        // arr.forEach(num => console.log(num));
+        // function search(arr,num){
+        //     for(let i = 0; i < arr.length; i++){
+        //         if(arr[i] === num){
+        //             console.log(`element found at: ${i}`);
+        //             return;
+        //         }
+        //     }
+        //     console.log('Element was not found');
+        // }
+        // search(arr, 0);
+
+        // ARRAY METHODS
+
+        // let arr = [1,2,3,4,5,6,7,8,9];
+        // let oddNumbers = arr.filter((num, index) => {
+        //     if (num % 2 === 1) {
+        //         return true;
+        //     } else{
+        //         return false; 
+        //     }
+        // });
+
+        // let newOddNumbers = arr.filter(
+        //     (num, index) => num % 2 === 0
+        // );
+        // console.log(oddNumbers);
+        // console.log(newOddNumbers);
+
+        let arr = [1,2,3,4,5,6,7,8,9];
+        let square = arr.map(num => num*num)
+        console.log(square);
+
+     </script>
+</body>
+</html>
